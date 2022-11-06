@@ -39,7 +39,7 @@ public class Main {
         int mortality = 8;
         int growth = (birthRate - mortality);
 
-        for (int a = 0; a <= 10; a++) {
+        for (int populationChange = 0; populationChange <= 10; populationChange++) {
             population += population * growth / 1000;
         }
         System.out.println(population);
@@ -51,13 +51,13 @@ public class Main {
         int initialAmount = 15_000;
         int savings = 0;
 
-        for (int b = 0; savings <= 12_000_000; b++) {
+        for (int monthOfAccumulation = 0; savings <= 12_000_000; monthOfAccumulation++) {
             savings += savings *7 / 100;
             savings += initialAmount;
-            if (b % 5 ==0) {
-                System.out.println("месяц " + b + " промежуточные накопления " + savings);
+            if (monthOfAccumulation % 5 ==0) {
+                System.out.println("месяц " + monthOfAccumulation + " промежуточные накопления " + savings);
             }
-            System.out.println("месяц " + b + " накоплено " + savings);
+            System.out.println("месяц " + monthOfAccumulation + " накоплено " + savings);
         }
         System.out.println(savings);
 
@@ -66,16 +66,16 @@ public class Main {
 
         int initialAmount1 = 15_000;
         int savings1 = 0;
-        int b1 = 0;
+        int monthOfAccumulation1 = 0;
 
         while (savings1 <= 12_000_000) {
-            b1++;
+            monthOfAccumulation1++;
             savings1 += savings1 *7 / 100;
             savings1 += initialAmount1;
-            if (b1 % 5 ==0) {
-                System.out.println("месяц " + b1 + " промежуточные накопления " + savings1);
+            if (monthOfAccumulation1 % 5 ==0) {
+                System.out.println("месяц " + monthOfAccumulation1 + " промежуточные накопления " + savings1);
             }
-            System.out.println("месяц " + b1 + " накоплено " + savings1);
+            System.out.println("месяц " + monthOfAccumulation1 + " накоплено " + savings1);
         }
         System.out.println(savings);
 
@@ -86,11 +86,11 @@ public class Main {
         int initialAmountc = 15_000;
         int savingsc = 0;
 
-        for (int c = 0; savingsc <= 12_000_000; c++) {
+        for (int monthOfAccumulation2 = 0; savingsc <= 12_000_000; monthOfAccumulation2++) {
             savingsc += savingsc *7 / 100;
             savingsc += initialAmountc;
-            if (c % 6 ==0) {
-                System.out.println("месяц " + c + " промежуточные накопления " + savingsc);
+            if (monthOfAccumulation2 % 6 ==0) {
+                System.out.println("месяц " + monthOfAccumulation2 + " промежуточные накопления " + savingsc);
             }
         }
 
@@ -99,14 +99,14 @@ public class Main {
 
         int initialAmountc1 = 15_000;
         int savingsc1 = 0;
-        int c1 = 0;
+        int monthOfAccumulation3 = 0;
 
         while (savingsc1 <= 12_000_000) {
-            c1++;
+            monthOfAccumulation3++;
             savingsc1 += savingsc1 *7 / 100;
             savingsc1 += initialAmountc1;
-            if (c1 % 6 ==0) {
-                System.out.println("месяц " + b1 + " промежуточные накопления " + savingsc1);
+            if (monthOfAccumulation3 % 6 ==0) {
+                System.out.println("месяц " + monthOfAccumulation3 + " промежуточные накопления " + savingsc1);
             }
         }
 
@@ -116,13 +116,13 @@ public class Main {
 
         int initialAmountd = 15_000;
         int savingsd = 0;
-        int d = 0;
+        int monthOfAccumulation4 = 0;
 
-        for ( ; d < 12 * 9; d++) {
+        for ( ; monthOfAccumulation4 < 12 * 9; monthOfAccumulation4++) {
             savingsd += savingsd *7 / 100;
             savingsd += initialAmountd;
-            if (d % 6 == 0) {
-                System.out.println("месяц " + d + " промежуточные накопления " + savingsd);
+            if (monthOfAccumulation4 % 6 == 0) {
+                System.out.println("месяц " + monthOfAccumulation4 + " промежуточные накопления " + savingsd);
             }
         }
         System.out.println(savingsd);
@@ -132,14 +132,14 @@ public class Main {
 
         int initialAmountd1 = 15_000;
         int savingsd1 = 0;
-        int d1 = 0;
+        int monthOfAccumulation5 = 0;
 
-        while (d1 < 12 * 9) {
-            d1++;
+        while (monthOfAccumulation5 < 12 * 9) {
+            monthOfAccumulation5++;
             savingsd1 += savingsd1 *7 / 100;
             savingsd1 += initialAmountd1;
-            if (d1 % 6 == 0) {
-                System.out.println("месяц " + d1 + " промежуточные накопления " + savingsd1);
+            if (monthOfAccumulation5 % 6 == 0) {
+                System.out.println("месяц " + monthOfAccumulation5 + " промежуточные накопления " + savingsd1);
             }
         }
         System.out.println(savingsd1);
@@ -148,17 +148,17 @@ public class Main {
         System.out.println("Задаа-4 Домашнее задание №2");
         System.out.println("вариант 1");
 
-        for (int k = 2; k < 31; k = k + 7) {
-            System.out.println("Сегодня пятница " + k + " декабря 2022 года. Необходимо подготовить отчет");
+        for (int dateFriday = 2; dateFriday < 31; dateFriday = dateFriday + 7) {
+            System.out.println("Сегодня пятница " + dateFriday + " декабря 2022 года. Необходимо подготовить отчет");
         }
 
         System.out.println();
         System.out.println("вариант 2");
 
         int friday = 2;
-        for (int k1 = 0; k1 <= 31; k1++) {
-            if (k1 % 7 == friday) {
-                System.out.println("Сегодня пятница " + k1 + " декабря 2022 года. Необходимо подготовить отчет");
+        for (int dateFriday1 = 0; dateFriday1 <= 31; dateFriday1++) {
+            if (dateFriday1 % 7 == friday) {
+                System.out.println("Сегодня пятница " + dateFriday1 + " декабря 2022 года. Необходимо подготовить отчет");
             }
         }
 
@@ -166,14 +166,27 @@ public class Main {
         System.out.println("вариант 3");
 
         int friday1 = 2;
-        int k2 = 0;
+        int dateFriday2 = 0;
 
-        while (k2 <= 31) {
-            k2++;
-            if (k2 % 7 == friday1) {
-                System.out.println("Сегодня пятница " + k2 + " декабря 2022 года. Необходимо подготовить отчет");
+        while (dateFriday2 <= 31) {
+            dateFriday2++;
+            if (dateFriday2 % 7 == friday1) {
+                System.out.println("Сегодня пятница " + dateFriday2 + " декабря 2022 года. Необходимо подготовить отчет");
             }
         }
+
+        System.out.println();
+        System.out.println("вариант 4");
+
+        int dateFriday3 = 2;
+
+        while (dateFriday3 < 31) {
+            dateFriday3 += 7;
+            System.out.println("Сегодня пятница " + dateFriday3 + " декабря 2022 года. Необходимо подготовить отчет");
+        }
+
+
+
 
         System.out.println();
         System.out.println("Задаа-1 Домашнее задание №3");
@@ -207,9 +220,9 @@ public class Main {
         System.out.println();
         System.out.println("Задаа-2 Домашнее задание №3");
 
-        int n = 2;
-        for (int q = 1; q <= 10; q++) {
-            System.out.println(n + " * " + q + " = " + n * q);
+        int number = 2;
+        for (int calculation = 1; calculation <= 10; calculation++) {
+            System.out.println(number + " * " + calculation + " = " + number * calculation);
         }
 
 
